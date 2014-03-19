@@ -6,6 +6,11 @@
  */
 public class CannonBall {
 
+    /**
+     * Calculate the height of pyramid of cannon balls using recursion
+     * @param height
+     * @return number of cannon balls in the pyramid
+     */
     public static int cannonball(int height) {
         if (height < 1) {
             return 0;

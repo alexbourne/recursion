@@ -6,6 +6,12 @@
  */
 public class PermuteString {
 
+    /**
+     * List the permutations of characters in string s
+     * using a prefix and remainder approach with recursion
+     *
+     * @param s
+     */
     public static void listPermutations(String s) {
         recursivePermute("", s);
     }
@@ -22,6 +28,11 @@ public class PermuteString {
         }
     }
 
+    /**
+     * List the permutations of a string s using a string and index approach using recursion
+     *
+     * @param s
+     */
     public static void listPermutations2(String s) {
         recursivePermute(s, 0);
     }

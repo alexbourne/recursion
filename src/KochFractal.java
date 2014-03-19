@@ -7,7 +7,9 @@ import java.awt.geom.Path2D;
 import java.awt.geom.Point2D;
 
 /**
- * Created with IntelliJ IDEA.
+ * Use recursion to draw a Koch fractal - each line in the fractal
+ * is divided into 3, the middle third made into a triangular point
+ *
  * User: alexbourne
  * Date: 11/11/2013
  * Time: 22:30

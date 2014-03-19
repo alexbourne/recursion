@@ -12,6 +12,11 @@ public class DigitSum {
         System.out.println("digitalRoot(2222) = " + digitalRoot(2222));
     }
 
+    /**
+     * Sum the digits of an integer n using recursion
+     * @param n
+     * @return sum of digits in n
+     */
     public static int digitSum(int n) {
         if (n < 1) return 0;
         return n%10 + digitSum(n/10);

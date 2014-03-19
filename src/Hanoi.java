@@ -1,7 +1,8 @@
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created with IntelliJ IDEA.
+ * Recursion and the towers of hanoi puzzle
+ *
  * User: alexbourne
  * Date: 28/10/2013
  * Time: 20:45
@@ -12,6 +13,14 @@ public class Hanoi {
         System.out.printf("%s -> %s\n", start, finish);
     }
 
+    /**
+     * Move a tower of numDisks disks from start to finish via temp using recursion
+     *
+     * @param numDisks
+     * @param start
+     * @param finish
+     * @param temp
+     */
     public static void moveTower(int numDisks, char start, char finish, char temp) {
         if (numDisks == 1) {
             moveSingleDisk(start, finish);
@@ -22,6 +31,13 @@ public class Hanoi {
         }
     }
 
+    /**
+     * Print out the number of moves required to move a tower of numDisks disks from start to finish via temp
+     * @param numDisks
+     * @param start
+     * @param finish
+     * @param temp
+     */
     public static void numHanoiMoves(int numDisks, char start, char finish, char temp) {
         AtomicInteger count = new AtomicInteger();
         countHanoiMoves(numDisks, start, finish, temp, count);
@@ -39,6 +55,14 @@ public class Hanoi {
         }
     }
 
+    /**
+     * Move a tower of numDisks disks from start to finish via temp using recursion and a zero disks check
+     *
+     * @param numDisks
+     * @param start
+     * @param finish
+     * @param temp
+     */
     public static void moveTowerCheckZero(int numDisks, char start, char finish, char temp) {
         if (numDisks == 0) {
             return;

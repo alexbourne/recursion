@@ -23,6 +23,15 @@ public class Mondrian extends JFrame {
 
     }
 
+    /**
+     * Using recursion, divide a canvas into a mondrian style
+     *
+     * @param x
+     * @param y
+     * @param width
+     * @param height
+     * @param g2
+     */
     void subdivideCanvas(double x, double y, double width, double height, Graphics2D g2) {
         if (width * height >= MIN_AREA) {
             if (width > height) {
